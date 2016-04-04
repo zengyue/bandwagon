@@ -5,8 +5,8 @@ const logger = require('koa-logger');
 const route = require('./app/route');
 const nunjucks = require('koa-nunjucks-render');
 const mongo = require('koa-mongo');
-
 const app = koa();
+const config = require('./config/config');
 
 // middleware
 app.use(logger());
@@ -23,4 +23,4 @@ app.use(mongo({
 route(app);
 
 // listen
-app.listen(3000);
+app.listen(config.port);

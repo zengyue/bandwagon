@@ -8,7 +8,7 @@
     "server": "nodemon --watch app -e html app.js",
     "test": ""
   },
-  "author": "",
+  "author": "zengyue",
   "license": "ISC",
   "dependencies": {
     "koa": "^1.2.0",
