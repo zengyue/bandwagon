@@ -14,20 +14,10 @@ app.use(logger());
 // nunjucks render
 app.use(nunjucks('./app/views', {}));
 
+// mongodb middleware
 app.use(mongo({
   db: 'test'
 }));
-// app.use(mongo({
-//   host: 'localhost',
-//   port: 27017,
-//   user: 'admin',
-//   pass: '123456',
-//   db: 'test',
-//   max: 100,
-//   min: 1,
-//   timeout: 30000,
-//   log: false
-// }));
 
 // route middleware
 route(app);
