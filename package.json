@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "mongo": "mongod --dbpath=mongodb --port 27017",
+    "mongod": "mongod --dbpath=mongodb --port 27017",
     "server": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
