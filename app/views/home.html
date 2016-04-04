@@ -1,2 +1,8 @@
-<div>{{ message }}</div>
-<div>{{ users }}</div>
+{% extends 'layout.html' %}
+
+{% block title %}Posts{% endblock %}
+
+{% block content %}
+  <h1>Posts</h1>
+  <div>{{ users }}</div>
+{% endblock %}

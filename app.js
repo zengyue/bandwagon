@@ -1,12 +1,12 @@
 'use strict';
 
-var koa = require('koa');
-var logger = require('koa-logger');
-var route = require('./app/route');
-var nunjucks = require('koa-nunjucks-render');
-var mongo = require('koa-mongo');
+const koa = require('koa');
+const logger = require('koa-logger');
+const route = require('./app/route');
+const nunjucks = require('koa-nunjucks-render');
+const mongo = require('koa-mongo');
 
-var app = koa();
+const app = koa();
 
 // middleware
 app.use(logger());
