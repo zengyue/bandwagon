@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint ./app",
     "mongod": "mongod --dbpath=mongodb --port 27017",
-    "server": "nodemon --watch app -e html app.js",
+    "server": "nodemon --debug --watch app -e js,html app.js",
     "test": ""
   },
   "author": "zengyue",
